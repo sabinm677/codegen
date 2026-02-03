@@ -16,9 +16,18 @@ Run the minimal setup:
 bash ./setup_minimal.sh
 ```
 
+Run the minimal setup via a symlink in your local bin:
+
+```bash
+mkdir -p ~/.local/bin
+ln -sf "$PWD/setup_minimal.sh" ~/.local/bin/setup_minimal
+setup_minimal
+```
+
 Run via a symlink in your local bin:
 
 ```bash
+mkdir -p ~/.local/bin
 ln -sf "$PWD/setup.sh" ~/.local/bin/setup_env
 ```
 
