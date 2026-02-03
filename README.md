@@ -19,8 +19,10 @@ bash ./setup_minimal.sh
 Run via a symlink in your local bin:
 
 ```bash
-mkdir -p ~/.local/bin
 ln -sf "$PWD/setup.sh" ~/.local/bin/setup_env
+```
+
+```bash
 setup_env
 ```
 
