@@ -7,19 +7,13 @@ This repository contains Bash scripts to automate local project setup.
 Run locally:
 
 ```bash
-bash ./setup_env.sh
+bash ./setup.sh
 ```
 
-Run via the bootstrap script:
+Run directly from a remote URL (after you upload `setup.sh`):
 
 ```bash
-bash ./init.sh
-```
-
-Run directly from a remote URL (after you upload `setup_env.sh`):
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/sabinm677/codegen/refs/heads/develop/init.sh | bash
+curl -fsSL <SCRIPT_URL> | bash
 ```
 
 ## What It Does
@@ -30,9 +24,6 @@ curl -fsSL https://raw.githubusercontent.com/sabinm677/codegen/refs/heads/develo
 - Downloads boilerplate and copies `.devcontainer` and `local`.
 - Starts a tmux session and runs `./local/container/up`.
 - Opens a new tmux window and runs `./local/container/connect`.
-## Bootstrap Script
-
-`init.sh` downloads `setup_env.sh`, runs it, then cleans up both files.
 
 ## Requirements
 

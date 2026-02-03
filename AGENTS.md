@@ -1,13 +1,11 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `setup_env.sh` is the primary entry point for local environment setup. It creates a numbered project folder (`s1`, `s2`, …), clones a repository, and provisions devcontainer files.
-- `init.sh` is a bootstrap script that downloads `setup_env.sh`, runs it, and removes both scripts afterward.
+- `setup.sh` is the primary entry point for local environment setup. It creates a numbered project folder (`s1`, `s2`, …), clones a repository, and provisions devcontainer files.
 - No other source modules or test directories exist in this repository at this time.
 
 ## Build, Test, and Development Commands
-- `bash ./setup_env.sh` — runs the interactive setup flow (prompts for a Git repo URL, prepares folders, and starts tmux sessions).
-- `bash ./init.sh` — runs the bootstrap flow for remote usage and self-cleans.
+- `bash ./setup.sh` — runs the interactive setup flow (prompts for a Git repo URL, prepares folders, and starts tmux sessions).
 - There are no build or test commands defined for this repository.
 
 ## Coding Style & Naming Conventions
