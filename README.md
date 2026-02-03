@@ -19,7 +19,7 @@ bash ./init.sh
 Run directly from a remote URL (after you upload `setup_env.sh`):
 
 ```bash
-curl -fsSL <SCRIPT_URL> | bash
+curl -fsSL https://raw.githubusercontent.com/sabinm677/codegen/refs/heads/develop/init.sh | bash
 ```
 
 ## What It Does
