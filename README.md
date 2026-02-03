@@ -10,6 +10,12 @@ Run locally:
 bash ./setup.sh
 ```
 
+Run the minimal setup:
+
+```bash
+bash ./setup_minimal.sh
+```
+
 Run via a symlink in your local bin:
 
 ```bash
