@@ -21,15 +21,16 @@ This minimal flow clones the repo and opens a tmux session with a new window.
 Run the minimal setup via a symlink in your local bin:
 
 ```bash
-mkdir -p ~/.local/bin
 ln -sf "$PWD/setup_minimal.sh" ~/.local/bin/setup_minimal
+```
+
+```bash
 setup_minimal
 ```
 
 Run via a symlink in your local bin:
 
 ```bash
-mkdir -p ~/.local/bin
 ln -sf "$PWD/setup.sh" ~/.local/bin/setup_env
 ```
 
