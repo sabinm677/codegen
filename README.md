@@ -13,7 +13,7 @@ bash ./setup.sh
 Run directly from a remote URL (after you upload `setup.sh`):
 
 ```bash
-curl -fsSL <SCRIPT_URL> | bash
+curl -fsSL https://raw.githubusercontent.com/sabinm677/codegen/refs/heads/develop/setup.sh | bash
 ```
 
 ## What It Does
