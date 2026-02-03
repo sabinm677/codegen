@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-read -r -p "Enter git repository URL: " REPO_URL
+if [[ -t 0 ]]; then
+  read -r -p "Enter git repository URL: " REPO_URL
+else
+  read -r -p "Enter git repository URL: " REPO_URL < /dev/tty
+fi
 if [[ -z "${REPO_URL}" ]]; then
   echo "Repository URL is required." >&2
   exit 1

@@ -6,4 +6,6 @@ SCRIPT_URL="https://raw.githubusercontent.com/sabinm677/codegen/refs/heads/devel
 curl -fsSL "${SCRIPT_URL}" -o setup.sh
 bash setup.sh
 rm -f setup.sh
-rm -f "$0"
+if [[ -f "$0" ]]; then
+  rm -f "$0"
+fi
