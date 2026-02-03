@@ -109,4 +109,8 @@ if [[ "${ready}" -ne 1 ]]; then
 fi
 
 tmux new-window -t "${PROJECT_NAME}" -c "${PROJECT_NAME}" "./local/container/connect"
-tmux attach -t "${PROJECT_NAME}"
+if [[ -t 1 ]]; then
+  tmux attach -t "${PROJECT_NAME}"
+else
+  echo "tmux session '${PROJECT_NAME}' is running. Attach with: tmux attach -t ${PROJECT_NAME}"
+fi
