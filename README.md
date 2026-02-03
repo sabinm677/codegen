@@ -10,6 +10,14 @@ Run locally:
 bash ./setup.sh
 ```
 
+Run via a symlink in your local bin:
+
+```bash
+mkdir -p ~/.local/bin
+ln -sf "$PWD/setup.sh" ~/.local/bin/setup_env
+setup_env
+```
+
 Run directly from a remote URL (after you upload `setup.sh`):
 
 ```bash
