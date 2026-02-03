@@ -16,6 +16,8 @@ Run the minimal setup:
 bash ./setup_minimal.sh
 ```
 
+This minimal flow clones the repo and opens a tmux session with a new window.
+
 Run the minimal setup via a symlink in your local bin:
 
 ```bash

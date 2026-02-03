@@ -6,7 +6,7 @@
 
 ## Build, Test, and Development Commands
 - `bash ./setup.sh` — runs the interactive setup flow (prompts for a Git repo URL, prepares folders, and starts tmux sessions).
-- `bash ./setup_minimal.sh` — runs a minimal flow (clone + tmux session with a split pane).
+- `bash ./setup_minimal.sh` — runs a minimal flow (clone + tmux session with a new window).
 - `ln -sf "$PWD/setup.sh" ~/.local/bin/setup_env` — creates a local symlink for easier invocation.
 - `setup_env` — runs the script via the symlink (ensure `~/.local/bin` is on `PATH`).
 - There are no build or test commands defined for this repository.

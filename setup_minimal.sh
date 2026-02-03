@@ -46,8 +46,7 @@ fi
 echo "Starting tmux session: ${PROJECT_NAME}"
 
 tmux new-session -d -s "${PROJECT_NAME}" -c "${PROJECT_NAME}"
-tmux split-window -h -t "${PROJECT_NAME}" -c "${PROJECT_NAME}"
-tmux select-pane -t "${PROJECT_NAME}"
+tmux new-window -t "${PROJECT_NAME}" -c "${PROJECT_NAME}"
 
 if [[ -t 1 ]]; then
   tmux attach -t "${PROJECT_NAME}"
